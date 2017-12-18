@@ -2,6 +2,7 @@
 将目录变成git可以管理的库：git init
 
 添加文件(暂存区)：git add filename
+(可提交多个文件)
 提交文件(分支)：git commit -m "说明"
 
 查看工作状态：git status
