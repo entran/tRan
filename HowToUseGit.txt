@@ -52,3 +52,16 @@ git checkout --filename
 git merge --no-ff name
 普通合并能看出来曾经做过合并
 快速fast forward就看不出来
+
+Bug分支：
+有个bug要修复 想创建临时分支issue-101 但是master的工作现场还没完成不能提交
+储存工作现场：git stash
+1.切换到dev分支 创建切换到临时分支 修复bug
+2.切换到dev分支 合并分支 删除临时分支
+查看工作现场：git stash list
+恢复工作现场：git stash apply
+删除工作现场：git stash drop
+恢复删除工作现场：git stash pop
+
+git stash apply stash@{0}
+(可以指定恢复stash 先用git stash list查看)
