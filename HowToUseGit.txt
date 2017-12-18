@@ -19,19 +19,21 @@ HEAD~100指向上100个版本
 版本来回切换：git reset --hard commit_ID(前7位) 
 
 三种情况的撤销方法
-1.未放到暂存区
-git checkout --filename
-2.已放到暂存区
-First：git reset HEAD filename
-Second：git checkout --filename
+1.未放到暂存区(只使用了add)
+git checkout -- filename 
+2.已放到暂存区(add和commit都使用)
+First：git reset HEAD filename (回到版本库)
+Second：git checkout --filename (回到工作区)
 3.已提交想撤销
-git reset --hard commit_ID
+git reset --hard commit_ID (版本退回)
 
-将误删的找回(最新版本)
+删除文件：git rm filename
+(如果文件已经提交到版本库 不用担心误删)
+将误删的找回(只能回到最新版本)
 git checkout --filename
 
 把文件放到github：git push -u origin master
-(-u可以把本地和远程的分支关联起来)
+(-u可以把本地和远程的分支关联起来 第一次需要-u)
 关联github：git remote add origin git@github.com:name/file.git
 推送最新修改：git push origin master
 
