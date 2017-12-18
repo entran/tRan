@@ -44,7 +44,11 @@ git checkout --filename
 创建分支：git branch name
 切换分支：git checkout name
 创建并切换分支：git checkout -b name
-合并某分支到当前分支：git merge name
+合并某分支到当前分支：git merge name(Fast forward合并)
 如果两个分支斗指向同一个位置 则无法合并
 则先结局冲突 再提交
 删除分支：git branch -d name
+
+git merge --no-ff name
+普通合并能看出来曾经做过合并
+快速fast forward就看不出来
