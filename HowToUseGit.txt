@@ -85,4 +85,7 @@ git stash apply stash@{0}
 从远程抓取分支：git pull
 如果有冲突 要先处理冲突
 
-
+选好分支建立标签：git tag name
+指定标签信息：git tag -a tagname -m " "
+PGP签名标签：git tag -s tagname -m " "
+查看所有标签：git tag
