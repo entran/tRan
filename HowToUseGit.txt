@@ -15,7 +15,7 @@ HEAD^指向上个版本
 HEAD^^指向上上个版本
 HEAD~100指向上100个版本
 
-版本来回切换：git reset --hard commit ID(前7位) 
+版本来回切换：git reset --hard commit_ID(前7位) 
 
 三种情况的撤销方法
 1.未放到暂存区
@@ -24,7 +24,7 @@ git checkout --filename
 First：git reset HEAD filename
 Second：git checkout --filename
 3.已提交想撤销
-git reset --hard commit ID
+git reset --hard commit_ID
 
 将误删的找回(最新版本)
 git checkout --filename
