@@ -65,3 +65,6 @@ Bug分支：
 
 git stash apply stash@{0}
 (可以指定恢复stash 先用git stash list查看)
+
+开发一个新的功能 最好新建一个分支
+如果要丢弃一个还没被合并过的分支：git branch -D name
