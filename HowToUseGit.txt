@@ -8,6 +8,7 @@
 查看工作状态：git status
 查看修改内容：git diff
 查看所有日志：git log
+(信息太多可用git log --pretty==oneline)
 查看命令历史：git reflog
 
 HEAD指向的是当前的版本
